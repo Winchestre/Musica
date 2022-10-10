@@ -41,7 +41,7 @@ nav {
     width: 34px;
     aspect-ratio: 1;
     border: none;
-    margin-left: 2em;
+    margin-left: 2.5em;
 }
 
 .mobile-toggler {
@@ -601,10 +601,10 @@ main {
     
 }
 
-@media screen and (max-width: 367px) {
+@media screen and (max-width: 395px) {
     .btn {
-        padding: 8px 13px;
-        font-size: 10.5px;
+        padding: 7.5px 11px;
+        font-size: 10.25px;
     }
 }
 
