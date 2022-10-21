@@ -1,5 +1,5 @@
 const mobileToggleBtn = document.querySelector(".mobile-toggler");
-const mainNavigation = document.querySelector(".container");
+const mainNavigation = document.querySelector(".link_container");
 
 mobileToggleBtn.addEventListener("click", () => {
     const ifVisible = mainNavigation.getAttribute("data-visible");
