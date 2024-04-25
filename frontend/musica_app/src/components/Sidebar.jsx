@@ -4,7 +4,7 @@ import {navItems} from '../data'
 
 export default function Sidebar() {
     return (
-        <main className="w-[100px] pt-4 flex flex-col items-center gap-5 fixed h-full">
+        <main className="md:w-[100px] pt-4 items-center gap-5 md:fixed h-full hidden md:flex md:flex-col">
         <img src={logo} width="35px" height="35px" />
         <nav className="pt-4">
             <ul className="flex flex-col bg-[--clr--darkalt--bg] rounded-full px-5 py-8 gap-8 mb-6">

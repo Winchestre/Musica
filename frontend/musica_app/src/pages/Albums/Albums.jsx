@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import AlbumsList from '../../components/Albums/AlbumsList'
 
-export default function Albums() {
+export default function Albums({ title }) {
     const [album,setAlbum] = useState([])
 
     useEffect(() => {
@@ -11,6 +11,7 @@ export default function Albums() {
                  const data = await response.json()
                  setAlbum(data)
                  //console.log(data.map(item => item))
+                 console.log(data[0].album_name)
              } catch (error) {
                  console.error('Failed to load resource', error)
              }
@@ -19,12 +20,16 @@ export default function Albums() {
     }, [])
     return (
         <main>
-            <h1>Albums</h1>
-             {
-                album.map(item => (
-                    <AlbumsList item={item} key={item.id}/>
-                ))
-            }
+            <h1 className="text-lg font-semibold">{title}</h1>
+            <ul className="grid grid-flow-col auto-cols-[81%] overflow-scroll overflow-x-contain md:overflow-hidden md:overflow-x-none md:flex md:flex-col gap-3 mt-2">
+                 {
+                    album.map(item => (
+                        <li key={item.id} className="bg-[--clr--darkalt--bg] p-3 rounded-2xl ">
+                            <AlbumsList item={item} />
+                        </li>
+                    ))
+                }
+            </ul>
         </main>
     )
 }

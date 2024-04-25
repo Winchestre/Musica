@@ -8,32 +8,107 @@ album_data = {
     "albums": [
         {
             "id": 1,
-            "album_name": "Mr Morales And The Big Steppers",
+            "album_name": "Mr. Morales & The Big Steppers",
             "artist": "Kendrick Lamar",
-            "number_of_songs": 10,
+            "number_of_songs": 19,
             "year_of_release": "2019",
             "duration": "12 hours",
+            "image_url": '/static/images/Rectangle 18.png',
             "songs": [
                 {
                     "id": 1,
-                    "title": "Good Kid Bad city",
-                    "description":"Compton kid",
-                     "image_url": '/static/images/Rectangle 14 (2).png',
-
+                    "title": "United In Grief",
+                     "image_url": '/static/images/Rectangle 15.png',
                 },
                 {
                     "id": 2,
-                    "title": "NRC",
-                    "description":"Straight out of LA",
-                     "image_url": '/static/images/Rectangle 14.png',
-
+                    "title": "N95",
+                     "image_url": '/static/images/Rectangle 27.png',
                 },
                 {
                     "id": 3,
-                    "title": "My Goodness Me",
-                    "description":"Kanye wet",
+                    "title": "Worldwide Steppers",
+                    "image_url": '/static/images/Rectangle 20.png',
+                },
+                {
+                    "id": 4,
+                    "title": "Die Hard",
+                     "image_url": '/static/images/Rectangle 21.png',
+                },
+                {
+                    "id": 5,
+                    "title": "Father Time",
+                     "image_url": '/static/images/Rectangle 16.png',
+                },
+                {
+                    "id": 6,
+                    "title": "Rich (Interlude)",
+                    "image_url": '/static/images/Rectangle 29.png',
+                },
+                {
+                    "id": 7,
+                    "title": "Rich Spirit",
+                     "image_url": '/static/images/Rectangle 15.png',
+                },
+                {
+                    "id": 8,
+                    "title": "We Cry Together",
+                     "image_url": '/static/images/Rectangle 14.png',
+                },
+                {
+                    "id": 9,
+                    "title": "Purple Hearts",
                     "image_url": '/static/images/Rectangle 14 (1).png',
-
+                },
+                {
+                    "id": 10,
+                    "title": "Count Me Out",
+                     "image_url": '/static/images/Rectangle 14 (2).png',
+                },
+                {
+                    "id": 11,
+                    "title": "Crown",
+                     "image_url": '/static/images/Rectangle 14.png',
+                },
+                {
+                    "id": 12,
+                    "title": "Silent Hill",
+                    "image_url": '/static/images/Rectangle 14 (1).png',
+                },
+                {
+                    "id": 13,
+                    "title": "Saviour (Interlude)",
+                     "image_url": '/static/images/Rectangle 14 (2).png',
+                },
+                {
+                    "id": 14,
+                    "title": "Saviour",
+                     "image_url": '/static/images/Rectangle 14.png',
+                },
+                {
+                    "id":15,
+                    "title": "Aunty Diaries",
+                    "image_url": '/static/images/Rectangle 14 (1).png',
+                },
+                {
+                    "id": 16,
+                    "title": "Mr. Morale",
+                    "image_url": '/static/images/Rectangle 14 (1).png',
+                },
+                {
+                    "id": 17,
+                    "title": "Mother Sober",
+                     "image_url": '/static/images/Rectangle 14 (2).png',
+                },
+                {
+                    "id": 18,
+                    "title": "Mirror",
+                     "image_url": '/static/images/Rectangle 14.png',
+                },
+                {
+                    "id":19,
+                    "title": "The Heart Part 5",
+                    "image_url": '/static/images/Rectangle 14 (1).png',
                 },
             ]
         },
@@ -44,27 +119,22 @@ album_data = {
             "number_of_songs": 23,
             "year_of_release": "2023",
             "duration": "16 hours",
+            "image_url": '/static/images/Rectangle 20.png',
             "songs": [
                 {
                     "id": 1,
                     "title": "First Person Shooter",
-                    "description":"Jcole was on this track",
                      "image_url": '/static/images/Rectangle 29.png',
-
                 },
                 {
                     "id": 2,
                     "title": "Bahamas Promises",
-                    "description":"Drake came out guns smoking",
-                     "image_url": '/static/images/Rectangle 14 (3).png',
-
+                     "image_url": '/static/images/Rectangle 17.png',
                 },
                 {
                     "id": 3,
                     "title": "Slime You Out",
-                    "description":"SZA went in guns blazing",
-                     "image_url": '/static/images/Rectangle 14 (4).png',
-
+                     "image_url": '/static/images/Lead-image.png',
                 },
                 {
                     "id": 4,
@@ -75,36 +145,93 @@ album_data = {
                 },
             ]
         },
-    ]
-}
-
-charts_data = {
-    "chartsData": [
         {
-            "id": 1,
-            "title": "8AM in Charlotte",
-            "artist": "Drake",
-            "duration": "2:14",
-            "image_url": "/static/images/Rectangle 29.png",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis",
-        },
-         {
-             "id": 2,
-            "title": "GOMD",
-            "artist": "JCole",
-            "duration": "3:00",
-            "image_url": "/static/images/Rectangle 14.png",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis",
+            "id": 3,
+            "album_name": "King's Disease II",
+            "artist": "Nas",
+            "number_of_songs": 15,
+            "year_of_release": "2023",
+            "duration": "16 hours",
+            "image_url": '/static/images/Rectangle 17.png',
+            "songs": [
+                {
+                    "id": 1,
+                    "title": "The Pressure",
+                     "image_url": '/static/images/Rectangle 15.png',
 
-        },
-        {
-             "id": 3,
-            "title": "4PM in Calabasas",
-            "artist": "Drake",
-            "duration": "8:14",
-            "image_url": "/static/images/Lead-image.png",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis",
+                },
+                {
+                    "id": 2,
+                    "title": "Death Row East",
+                     "image_url": '/static/images/Rectangle 29.png',
+                },
+                {
+                    "id": 3,
+                    "title": "40 side",
+                     "image_url": '/static/images/Rectangle 16.png',
+                },
+                {
+                    "id": 4,
+                    "title": "EPMD 2",
+                    "image_url": '/static/images/Rectangle 19.png',
+                },
+                {
+                    "id": 5,
+                    "title": "Rare",
+                    "image_url": '/static/images/Rectangle 27.png',
+                },
+                {
+                    "id": 6,
+                    "title": "YKTV",
+                    "image_url": '/static/images/Rectangle 15.png',
+                },
+                {
+                    "id": 7,
+                    "title": "Store Run",
+                     "image_url": '/static/images/Rectangle 26.png',
 
+                },
+                {
+                    "id": 8,
+                    "title": "Moments",
+                     "image_url": '/static/images/Rectangle 29.png',
+                },
+                {
+                    "id": 9,
+                    "title": "Nobody (feat. Ms. Lauryn Hill)",
+                     "image_url": '/static/images/Rectangle 14 (5).png',
+                },
+                {
+                    "id": 10,
+                    "title": "No Phony Love",
+                    "image_url": '/static/images/Rectangle 14 (4).png',
+                },
+                {
+                    "id": 11,
+                    "title": "Brunch on Sundays",
+                    "image_url": '/static/images/Rectangle 29.png',
+                },
+                {
+                    "id": 12,
+                    "title": "Count Me In",
+                    "image_url": '/static/images/Rectangle 14.png',
+                },
+                {
+                    "id": 13,
+                    "title": "Composure",
+                    "image_url": '/static/images/Rectangle 14 (1).png',
+                },
+                {
+                    "id": 14,
+                    "title": "My Bible",
+                    "image_url": '/static/images/Rectangle 14 (3).png',
+                },
+                {
+                    "id": 15,
+                    "title": "Nas Is Good",
+                    "image_url": '/static/images/Rectangle 14 (5).png',
+                },
+            ]
         },
     ]
 }
@@ -116,21 +243,55 @@ collections_data = {
                 "id": 1,
                 "name": "Kanye",
                 "description": "Niggas in Paris",
-                "image_url": '/static/images/Rectangle 14.png',
+                "image_url": '/static/images/Rectangle 29.png',
             },
             {
                 "id": 2,
                 "name": "Jay Z",
                 "description": "Empire State of Mind",
-                "image_url": '/static/images/Rectangle 14.png',
-
+                "image_url": '/static/images/Rectangle 27.png',
             },
             {
                 "id": 3,
                 "name": "Lil Wayne",
                 "description": "Carter",
-                "image_url": '/static/images/Rectangle 14.png',
-
+                "image_url": '/static/images/Rectangle 28.png',
+            },
+            {
+                "id": 4,
+                "name": "Kanye",
+                "description": "Niggas in Paris",
+                "image_url": '/static/images/Rectangle 29.png',
+            },
+            {
+                "id": 5,
+                "name": "Jay Z",
+                "description": "Empire State of Mind",
+                "image_url": '/static/images/Rectangle 28.png',
+            },
+            {
+                "id": 6,
+                "name": "Lil Wayne",
+                "description": "Carter",
+                "image_url": '/static/images/Rectangle 27.png',
+            },
+            {
+                "id": 7,
+                "name": "Kanye",
+                "description": "Niggas in Paris",
+                "image_url": '/static/images/Rectangle 28.png',
+            },
+            {
+                "id": 8,
+                "name": "Jay Z",
+                "description": "Empire State of Mind",
+                "image_url": '/static/images/Rectangle 29.png',
+            },
+            {
+                "id": 9,
+                "name": "Lil Wayne",
+                "description": "Carter",
+                "image_url": '/static/images/Rectangle 27.png',
             },
         ]
 }
@@ -206,24 +367,8 @@ def albumItem(id):
     if "albums" in album_data:
         for album in album_data["albums"]:
             if "id" in album and album["id"] == id:
-                for song in album["songs"]:
-                    if "id" in song and song["id"] == id:
-                        return song
-                return jsonify({"error": "No ID found"}), 404
+                return album
         return jsonify({"error": "No ID found"}), 404
-    return False
-
-@app.route("/top_charts", methods=['GET'])
-def charts():
-    return jsonify(charts_data)
-
-@app.route("/top_charts/<int:id>", methods=['GET'])
-def song(id):
-    if "chartsData" in charts_data:
-        for item in charts_data["chartsData"]:
-            if "id" in item and item["id"] == id:
-                return item
-        return jsonify({"error": "id not found"}), 404
     return False
 
 @app.route("/collections", methods=['GET'])

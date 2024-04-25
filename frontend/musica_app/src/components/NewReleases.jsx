@@ -2,7 +2,7 @@ export default function NewReleases({ newRelease }) {
     return (
         <main className="mt-6">
             <h1 className="text-xl font-bold">New Releases</h1>
-            <ul className="flex gap-6 mt-4">
+            <ul className="mt-4 grid grid-flow-col auto-cols-[49%] overflow-scroll overflow-x-contain md:overflow-hidden md:overflow-x-none md:auto-cols-auto">
                 {
                     newRelease.map(item => (
                         <li key={item.id}>

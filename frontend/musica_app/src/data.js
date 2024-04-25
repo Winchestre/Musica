@@ -10,30 +10,36 @@ export const navItems = [
         label: "Home",
         path: "/",
         icon: home,
+        label: "Home"
     },
     {
         label: "My Collections",
         path: "collections",
         icon: playlist,
+        label: "My Collections",
     },
     {
         label: "Radio",
         path: "radio",
         icon: radio,
+        label: "Radio",
     },
     {
         label: "Music Videos",
         path: "videos",
         icon: videos,
+        label: "Music Videos",
     },
     {
         label: "Profile",
         path: "profile",
         icon: profile,
+        label: "Profile",
     },
     {
         label: "Logout",
         path: "logout",
         icon: logout,
+        label: "Logout",
     },
 ]
