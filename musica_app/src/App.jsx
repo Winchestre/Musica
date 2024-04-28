@@ -8,6 +8,7 @@ import Profile from './pages/Profile'
 import Logout from './pages/Logout'
 import Albums from './pages/Albums/Albums'
 import AlbumDetail, { AlbumDetailLoader } from './pages/AlbumDetail'
+import NotFound from './pages/NotFound'
 import TopCharts from './components/TopCharts'
 import RootLayout from './layouts/RootLayout'
 
@@ -22,6 +23,7 @@ const router = createBrowserRouter(
             <Route path="logout" element={<Logout />} />
             <Route path="albums" element={<Albums />} />
             <Route path="api/albums/:id" element={<AlbumDetail />} loader={AlbumDetailLoader} />
+            <Routes path="*" element={<NotFound />} />
         </Route>
         )
     )
