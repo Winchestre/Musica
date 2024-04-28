@@ -363,7 +363,7 @@ new_releases = {
 @app.route('/', defaults={'path': ''})
 @app.route('/<path:path>')
 def catch_all(path):
-    return render_template("index.html")
+    return app.send_static_file("index.html")
 
 @app.route("/api/albums", methods=['GET'])
 def albumItems():
