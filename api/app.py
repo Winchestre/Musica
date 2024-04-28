@@ -360,8 +360,9 @@ new_releases = {
     ]
 }
 
-@app.route('/')
-def index():
+@app.route('/', defaults={'path': ''})
+@app.route('/<path:path>')
+def catch_all(path):
     return render_template("index.html")
 
 @app.route("/api/albums", methods=['GET'])
