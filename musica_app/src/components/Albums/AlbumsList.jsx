@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 export default function AlbumsList({ item }) {
     return (
-               <Link to={`/api/albums/${item.id}`} className="w-full">
+               <Link to={`http://127.0.0.1:5000/api/albums/${item.id}`} className="w-full">
                    <div className="md:flex gap-3">
                        <img src={`http://127.0.0.1:5000${item.image_url}`} className="w-[90px] h-[90px] md:w-[60px] md:h-[60px]" alt="" />
                         <div className="mt-3 md:mt-0">

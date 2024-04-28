@@ -1,4 +1,3 @@
-
 import Albums from '../pages/Albums/Albums'
 
 export default function TopCharts() {

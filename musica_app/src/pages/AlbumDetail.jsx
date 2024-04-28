@@ -12,12 +12,7 @@ export default function AlbumDetail() {
 
     return (
         <>
-            <main className="md:flex gap-4" style={{
-                        backgroundImage: `url(http://127.0.0.1:5000${items.image_url})`,
-                        backgroundSize: "cover",
-                        backgroundPosition: "center",
-                        backgroundRepeat: "no-repeat",
-                }}>
+            <main className="md:flex gap-4" >
                 <img src={`http://127.0.0.1:5000${items.image_url}`} className="w-[100%] md:w-[300px]" height="300px" alt="image" />
                 <div className="mt-6 md:mt-[120px]">
                     <h1 className="text-2xl md:text-3xl text-[--clr--primary--bg] font-semibold">{items.album_name}</h1>
@@ -59,6 +54,6 @@ export default function AlbumDetail() {
 
 export const AlbumDetailLoader = async ({ params }) => {
     const { id } = params
-    const response = await fetch(`http://127.0.0.1:5000/api/albums/${id}`)
+    const response = await fetch(` http://127.0.0.1:5000/api/albums/${id}`)
      return response.json()
 }
