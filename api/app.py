@@ -358,8 +358,7 @@ new_releases = {
 }
 
 @app.route('/')
-@app.route('/<int:id>')
-def index(id=0):
+def index():
     return render_template("index.html")
 
 @app.route("/api/albums", methods=['GET'])
