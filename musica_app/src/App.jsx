@@ -15,7 +15,6 @@ import RootLayout from './layouts/RootLayout'
 const router = createBrowserRouter(
     createRoutesFromElements(
         <Route path="/" element={<RootLayout />}>
-            <Routes path="*" element={<NotFound />} />
             <Route index element={<Home />} />
             <Route path="radio" element={<Radio />} />
             <Route path="collections" element={<Collections />} />
@@ -24,6 +23,7 @@ const router = createBrowserRouter(
             <Route path="logout" element={<Logout />} />
             <Route path="albums" element={<Albums />} />
             <Route path="api/albums/:id" element={<AlbumDetail />} loader={AlbumDetailLoader} />
+            <Routes path="*" element={<NotFound />} />
         </Route>
         )
     )
