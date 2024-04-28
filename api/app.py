@@ -2,7 +2,7 @@ from flask import Flask, jsonify, render_template
 from flask_cors import CORS
 
 app = Flask(__name__,
-    static_url_path="/",
+    static_url_path="",
     static_folder='../musica_app/dist',
     template_folder='../musica_app/dist')
 CORS(app)
