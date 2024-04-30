@@ -14,15 +14,20 @@ export default function AlbumDetail() {
 
     useEffect(() => {
         const fetchItems = async(id) => {
-            const response = await fetch(`https://musica-wmgz.onrender.com/api/albums/${id}`)
-            const data = await response.json()
-
-            setItems(data)
-            setSongs(data.songs)
-            //console.log(data.songs)
+          try {
+              const response = await fetch(`https://musica-wmgz.onrender.com/api/albums/${id}`)
+              if (!response.ok) {
+                  throw new Error('Failed to fetch data')
+              }
+              const data = await response.json()
+              setItems(data)
+              setSongs(data.songs)
+          } catch (error) {
+              console.error('Error fetching data:', error)
+          }
         }
         fetchItems(id)
-     }, [])
+     }, [id])
     //const items = useLoaderData()
 
     return (
