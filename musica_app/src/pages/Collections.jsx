@@ -7,7 +7,7 @@ export default function Collections() {
     useEffect(() => {
         const fetchCollections = async () => {
             try{
-                const response = await fetch('/api/collections');
+                const response = await fetch('https://musica-wmgz.onrender.com/api/collections');
                     const data = await response.json();
                     setCollection(data.collections);
                     console.log(data.collections)

@@ -14,7 +14,7 @@ export default function AlbumDetail() {
 
     useEffect(() => {
         const fetchItems = async(id) => {
-            const response = await fetch(`/api/albums/${id}`)
+            const response = await fetch(`https://musica-wmgz.onrender.com/api/albums/${id}`)
             const data = await response.json()
 
             setItems(data)
