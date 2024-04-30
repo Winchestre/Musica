@@ -1,4 +1,5 @@
-import { useParams, useLoaderData } from 'react-router-dom'
+import { useParams } from 'react-router-dom'
+import { useState, useEffect } from 'react'
 import heart_white from '../assets/icons/Heart_white.svg'
 import heart_red from '../assets/icons/Heart.svg'
 import vertical from '../assets/icons/more-vertical.svg'
@@ -7,8 +8,22 @@ import music from '../assets/icons/music.svg'
 
 
 export default function AlbumDetail() {
+    const [items, setItems] = useState([])
+    const [song, setSongs] = useState([])
     const {id} = useParams()
-    const items = useLoaderData()
+
+    useEffect(() => {
+        const fetchItems = async(id) => {
+            const response = await fetch(`http://127.0.0.1:5000/api/albums/${id}`)
+            const data = await response.json()
+
+            setItems(data)
+            setSongs(data.songs)
+            //console.log(data.songs)
+        }
+        fetchItems(id)
+     }, [])
+    //const items = useLoaderData()
 
     return (
         <>
@@ -34,7 +49,7 @@ export default function AlbumDetail() {
             <section className="mt-12">
                 <ul className="flex flex-col gap-2 pb-4">
                     {
-                        items.songs.map(item => (
+                        song.map(item => (
                             <li key={item.id} className="bg-[--clr--darkalt--bg] p-2 rounded-2xl grid grid-cols-4 items-center">
                                 <div className="md:flex gap-6">
                                     <img src={`http://127.0.0.1:5000${item.image_url}`} width="50px" height="40px" className="rounded-md" alt="song_image" />
@@ -50,10 +65,4 @@ export default function AlbumDetail() {
             </section>
         </>
     )
-}
-
-export const AlbumDetailLoader = async ({ params }) => {
-    const { id } = params
-    const response = await fetch(`/api/albums/${id}`)
-     return response.json()
 }
