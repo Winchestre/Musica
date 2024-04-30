@@ -7,7 +7,7 @@ export default function Collections() {
     useEffect(() => {
         const fetchCollections = async () => {
             try{
-                const response = await fetch('http://127.0.0.1:5000/api/collections');
+                const response = await fetch('/api/collections');
                     const data = await response.json();
                     setCollection(data.collections);
                     console.log(data.collections)
