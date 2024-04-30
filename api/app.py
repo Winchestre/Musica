@@ -1,9 +1,7 @@
-from flask import Flask, jsonify, render_template
+from flask import Flask, jsonify
 from flask_cors import CORS
 
-app = Flask(__name__,
-
-    )
+app = Flask(__name__)
 CORS(app)
 
 album_data = {
@@ -358,10 +356,6 @@ new_releases = {
 
     ]
 }
-
-@app.errorhandler(404)
-def not_found(e):
-    return app.send_static_file("index.html")
 
 @app.route("/api/albums", methods=['GET'])
 def albumItems():
