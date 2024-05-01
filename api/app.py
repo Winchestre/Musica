@@ -369,7 +369,7 @@ def get_albums():
     return jsonify(albums)
 
 
-@app.route("/api/albums/<int:id>", methods=['GET'])
+@app.route("/api/albums/<int:user_id>", methods=['GET'])
 def albumItem(user_id):
     albums = album_data.get("albums", [])
     for album in albums:
