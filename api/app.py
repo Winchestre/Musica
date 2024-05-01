@@ -364,20 +364,18 @@ def index():
 
 
 @app.route("/api/albums", methods=['GET'])
-def albumItems():
-    if "albums" in album_data:
-        return jsonify(album_data["albums"])
-    return jsonify({"error": "Not Found"}), 404
+def get_albums():
+    albums = album_data.get("albums", [])
+    return jsonify(albums)
 
 
 @app.route("/api/albums/<int:id>", methods=['GET'])
 def albumItem(user_id):
-    if "albums" in album_data:
-        for album in album_data["albums"]:
-            if "id" in album and album["id"] == user_id:
-                return album
-        return jsonify({"error": "No ID found"}), 404
-    return False
+    albums = album_data.get("albums", [])
+    for album in albums:
+        if album.get("user_id") == user_id:
+            return jsonify(album)
+    return jsonify({"error": "Album not found"}), 404
 
 
 @app.route("/api/collections", methods=['GET'])
