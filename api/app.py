@@ -370,10 +370,10 @@ def get_albums():
 
 
 @app.route("/api/albums/<int:user_id>", methods=['GET'])
-def albumItem(user_id):
+def get_album(user_id):
     albums = album_data.get("albums", [])
     for album in albums:
-        if album.get("user_id") == user_id:
+        if "user_id" and album["user_id"] == user_id:
             return jsonify(album)
     return jsonify({"error": "Album not found"}), 404
 
