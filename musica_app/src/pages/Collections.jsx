@@ -27,7 +27,7 @@ export default function Collections() {
                 {
                     collection.map(item => (
                         <li key={item.id} className="rounded-[20px] p-3 relative">
-                            <img src={`http://127.0.0.1:5000${item.image_url}`} alt="" width="100%" height="280px" className="rounded-[27px]" />
+                            <img src={`https://musica-wmgz.onrender.com${item.image_url}`} alt="" width="100%" height="280px" className="rounded-[27px]" />
                             <div className="absolute top-[60%] px-3">
                                 <h1 className="text-lg font-semibold">{item.description}</h1>
                                 <h2 className="text-sm font-light">{item.name}</h2>

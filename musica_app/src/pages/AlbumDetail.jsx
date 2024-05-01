@@ -33,7 +33,7 @@ export default function AlbumDetail() {
     return (
         <>
             <main className="md:flex gap-4" >
-                <img src={`http://127.0.0.1:5000${items.image_url}`} className="w-[100%] md:w-[300px]" height="300px" alt="image" />
+                <img src={`https://musica-wmgz.onrender.com${items.image_url}`} className="w-[100%] md:w-[300px]" height="300px" alt="image" />
                 <div className="mt-6 md:mt-[120px]">
                     <h1 className="text-2xl md:text-3xl text-[--clr--primary--bg] font-semibold">{items.album_name}</h1>
                     <p className="text-[14px] mt-2 md:w-[75%]">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet luctus venenatis</p>
@@ -57,7 +57,7 @@ export default function AlbumDetail() {
                         song.map(item => (
                             <li key={item.id} className="bg-[--clr--darkalt--bg] p-2 rounded-2xl grid grid-cols-4 items-center">
                                 <div className="md:flex gap-6">
-                                    <img src={`http://127.0.0.1:5000${item.image_url}`} width="50px" height="40px" className="rounded-md" alt="song_image" />
+                                    <img src={`https://musica-wmgz.onrender.com${item.image_url}`} width="50px" height="40px" className="rounded-md" alt="song_image" />
                                     <img src={heart_white} alt="like" className="hidden md:block" width="22px" height="22px" />
                                 </div>
                                 <h1 className=" text-sm md:text-base font-semibold text-neutral-400">{item.title}</h1>

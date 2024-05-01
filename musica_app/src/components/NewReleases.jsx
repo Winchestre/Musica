@@ -7,7 +7,7 @@ export default function NewReleases({ newRelease }) {
                     newRelease.map(item => (
                         <li key={item.id}>
                             <div>
-                                <img src={`http://127.0.0.1:5000${item.image_url}`} width="140px" height="140px" alt={item.name} />
+                                <img src={`https://musica-wmgz.onrender.com${item.image_url}`} width="140px" height="140px" alt={item.name} />
                                 <div className="mt-2">
                                     <p className="text-xs text-neutral-500">{item.description}</p>
                                     <h5 className="text-sm">{item.name}</h5>
